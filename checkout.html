@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="checkout.css" type="text/css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Raleway:ital@1&family=Urbanist:wght@100&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+</head>
+</html>
+<body>
+  <div class="container-fluid">
+    <!--nav bar -->
+    <div class="row">
+    <nav class='navbar navbar-dark'>
+      <div id="additional">
+        <button class="toggler" type="button">
+           <i id="clicktoggle" class="fa fa-bars fa-2x"></i>
+          </button>
+          <ul class="hidden-nav-data test">
+            <a class="hidden" href="/index.html">Home</a>
+            <a class="hidden" href="/index.html#workout-programs">Workout Programs</a>
+            <a class="hidden" href="/support/support.html">Support</a>
+          </ul>
+      </div>
+
+      <a class="navbar-brand" href="/index.html">
+        <img src="/images/logo.png" class="logo">
+      </a>
+
+      <ul class="nav-list">
+        <a class="list-items first-item" href="/index.html">Home</a>
+        <a class="list-items" href="/index.html#workout-programs">Workout Programs</a>
+        <a class="list-items last-item" href="/support/support.html">Support</a>
+      </ul>
+      <div class="extra-nav">
+      <select class="select" id="select" >
+        <option class="eur" value="GBP" data-conv="1.00"  data-symbol="£">GBP</option>
+        <option value="EUR" data-conv="1.17" data-symbol="€">EUR</option>
+        <option value="USD" data-conv="1.39" data-symbol="$">USD</option>
+        <option value="CAD" data-conv="1.75" data-symbol="C$">CAD</option>
+        <option value="AUD" data-conv="1.89" data-symbol="A$">AUD</option>
+      </select>
+      <a class="cart-link mt-auto" href="/checkout.html">
+        <i class="fas fa-shopping-cart"></i>
+      </a>
+    </div>
+  </nav>
+  </div>
+
+  <div class="row">
+    <div class="col-12 header-div">
+      <h1 class="header text-center">Shopping Cart</h1>
+    </div>
+  </div>
+<div class="height">
+  <div class="row checkout-table">
+    <div class="col-12 mx-auto">
+      <table style="border: 2px solid black; width: 100%;" id="table">
+        <thead>
+          <tr>
+            <th  style="border: 2px solid black;" colspan="2" class="column-header"></th>
+            <th style="border: 2px solid black;" class="column-headers">Price</th>
+            <th  style="border: 2px solid black;" class="column-headers">Quantity</th>
+            <th  style="border: 2px solid black;"class="column-headers">Total</th>
+          </tr>
+        </thead>
+        <tbody id="body">
+          <tr id="row1" class="text-center">
+            <td colspan="4">Your basket is currently empty!</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+  <div class="col-10 mx-auto">
+    <span class="final">
+      <p class="total-p">Total:</p>
+      <p class="final-total" id="final-total">0.00</p>
+    </span>
+  </div>
+
+</div>
+
+
+
+<div class="row footer">
+  <div class="footer-col m-auto col-12" >
+    <a class="test">
+      <img src="/images/logo.png" class="img-fluid footer-logo" alt="Responsive image">
+    </a>
+  </div>
+  <div class="col-12 social-media">
+    <ul class="text-center">
+      <li class="instagram m-auto">
+        <a href="https://www.instagram.com/keirgibbon/">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+      </li>
+      <li class="youtube">
+        <a href="https://www.youtube.com/channel/UCEGW9prAyshbhuzGjf5RUIA?app=desktop">
+          <i class="fab fa-youtube fa-2x"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type="text/javascript" src="checkout.js"></script>
+
+
+  </body>

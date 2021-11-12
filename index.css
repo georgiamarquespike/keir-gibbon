@@ -1,0 +1,317 @@
+/* m-auto -> margin auto
+text-center -> text center */
+/* basic all page sizing */
+html {
+  font-size: 16px;
+  width: 100%;
+  outline: none !important;
+}
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+  outline: 0 !important;
+
+}
+
+/* nav element */
+
+.toggler, .hidden-nav-data {
+  display: none;
+}
+.navbar{
+  font-family: 'Urbanist', sans-serif;
+  background-color: black;
+  width: 100%;
+}
+.logo{
+    max-width: 100%;
+  }
+.navbar-brand {
+  max-width: 8%;
+  margin-left: 2rem;
+}
+.nav-list {
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+}
+.list-items {
+  padding: 0 2rem;
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.extra-nav{
+  margin-right: 3rem;
+  vertical-align: middle;
+}
+.cart-link {
+  padding-left: 1rem;
+}
+.fa-shopping-cart{
+  font-size:2rem;
+  color: white;
+}
+.select{
+  position: relative;
+  color: black;
+  font-size: 0.8rem;
+}
+.navigation{
+  margin-bottom: -1rem;
+}
+ /*first section */
+.h1 {
+  font-family: 'Raleway', sans-serif;
+  padding-top: 5rem;
+  text-align: center;
+}
+.intro {
+  background-color: black;
+  color: white;
+}
+
+.info {
+  text-align: justify;
+  padding: 1rem 2rem;
+}
+.image {
+  background-image: url("/images/myimage.PNG");
+  background-size: cover;
+  height: 500px;
+}
+
+
+/*second section */
+
+.workout-programs {
+   height: 24rem;
+}
+
+.workout-header {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.workout-box {
+margin: 0 auto;
+padding-top: 3rem;
+}
+
+
+/* section 3*/
+
+.box-border {
+  background-color: hsl(199, 90%, 61%);
+  padding: 0.5rem 0;
+  color: black;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.start-now {
+  padding-left: 0.5rem;
+  font-family: 'Nunito', sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  display: inline-block;
+}
+.cost {
+  padding-right: 0.5rem;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  display: inline-block;
+}
+.img-fluid {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+.width-three {
+  width: 95%;
+  margin: 0 auto;
+}
+.cost{
+  float: right;
+}
+/*footer */
+.footer {
+  margin-top: 4rem;
+  background-color: black;
+  padding: 2rem 0 0 0;
+}
+.footer-col {
+  max-width: 15% !important;
+}
+.instagram, .youtube {
+  display: inline-block;
+  padding: 0 0.5rem;
+}
+.fab {
+  color: white;
+}
+
+
+@media only screen and (max-width: 980px) {
+/* nav element */
+  .fa-shopping-cart{
+    font-size: 1.5rem;
+  }
+  .select {
+    margin-top: 6px;
+    font-size: 0.8rem;
+  }
+  .first-item {
+    margin-left: -2rem;
+  }
+  .list-items {
+    padding: 0 1rem;
+  }
+
+ /*first section */
+  .info {
+    padding-bottom: 3rem;
+  }
+  /* section 3*/
+  .cost,.start-now {
+  font-size: 12px;
+}
+.cost {
+  margin-top: 0.3rem;
+}
+}
+
+@media only screen and (max-width: 768px) {
+html {
+  font-size: 12px;
+  }
+  /* nav element */
+.logo {
+  min-height: 40px;
+  min-width: 50px;
+  margin: 0 1rem 0 0;
+}
+.select {
+  margin-top: 6px;
+}
+/*section 1 */
+.intro {
+  padding-bottom: 5rem;
+}
+ /* section 2*/
+.workout-header {
+  margin-top: 2rem;
+}
+/* section 3*/
+.cost {
+  margin-top: 0
+}
+/*footer */
+.footer-link{
+  min-height: 63px;
+  min-width: 86px;
+  float: left;
+}
+.footer-logo{
+  height: 100%;
+}
+
+.footer-col{
+  max-width: 25% !important;
+}
+}
+
+
+@media only screen and (max-width: 576px){
+  /* nav element */
+.nav-list{
+  display: none;
+}
+.toggler {
+  display: block;
+  background-color: black;
+  color: white;
+  border: 0px;
+  }
+
+.hidden{
+  display: block;
+  color: white;
+}
+.navbar-brand {
+  bottom: 100%;
+}
+
+#additional {
+  width: 80px;
+}
+.hidden-nav-data{
+  color: white;
+  padding-top: 1rem;
+  position: absolute;
+  z-index: 4;
+}
+.select {
+  font-size: 0.6rem;
+}
+.fa-shopping-cart{
+  font-size: 1rem;
+}
+
+/*section 2*/
+
+.workout-header {
+  margin-top: 2rem;
+
+}
+.workout-programs{
+  margin-bottom: 8rem;
+}
+ }
+
+@media only screen and (max-width: 440px){
+  /*navbar*/
+  .navbar-brand {
+    margin-right: 4rem;
+  }
+
+/*main section */
+
+  .footer-col{
+     right: 10px;
+  }
+  .width-three {
+    padding-top: 3rem;
+  }
+}
+@media only screen and (max-width: 375px){
+  /*nav bar */
+  .extra-nav {
+    margin-right: 0;
+  }
+  /* footer */
+  .footer-col{
+    right: 13px;
+  }
+}
+@media only screen and (max-width: 320px){
+  .footer-col{
+    right: 20px;
+  }
+}
+@media only screen and (max-width: 320px){
+/*navbar*/
+.extra-nav {
+  margin-right: 0;
+}
+.logo {
+    margin-left: -10px;
+}
+
+.start-now, .cost {
+  font-size: 10px;
+}
+
+}
